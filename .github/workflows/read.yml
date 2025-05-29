@@ -1,25 +1,13 @@
-name: "hello-workflow"
+name: "My GitHub Action"
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-      
+    push:
+    branch:
+        -main
+    
 jobs:
-  hello:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Print message
-        run: echo "Hello, world! This is a GitHub Actions workflow."
-      
-      - name: List files
-        run: ls -la
-
-      - name: Display current date
-        run: date
+    demo:
+        runs-on: ubuntu-latest
+        steps:
+            -name: "print hello world"
+                run: echo "hello world"
