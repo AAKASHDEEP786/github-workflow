@@ -2,12 +2,12 @@ name: "My GitHub Action"
 
 on:
     push:
-    branch:
-        -main
+    branches:
+        - main
     
 jobs:
     demo:
         runs-on: ubuntu-latest
         steps:
-            -name: "print hello world"
-                run: echo "hello world"
+            - name: "print hello world"
+              run: echo "hello world"
