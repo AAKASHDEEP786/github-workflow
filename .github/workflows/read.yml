@@ -8,5 +8,5 @@ jobs:
   demo-job:
     runs-on: ubuntu-latest
     steps:
-      - name:checkout code
+      - name: checkout code
         run: echo "Hello world"
