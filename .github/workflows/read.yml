@@ -5,8 +5,11 @@ on:
     branches: [main]
 
 jobs:
-  demo-job:
+  demo-jobs:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code
-        run: echo "Hello world"
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: print hello world
+        run: echo "Hello world"   
