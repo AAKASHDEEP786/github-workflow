@@ -13,6 +13,6 @@ on:
   jobs:
     demo:
       runs-on: ubuntu-latest
-      stepes:
+      steps:
         - name: fine message
           run: echo "this commit is fine"
