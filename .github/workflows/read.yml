@@ -4,15 +4,14 @@ on:
   push:
     branches:
       - main
-  
-    pull_request:
-      branches:
+  pull_request:
+    branches:
       - main
-    workflow_dispatch:
+  workflow_dispatch:
 
-  jobs:
-    demo:
-      runs-on: ubuntu-latest
-      steps:
-        - name: fine message
-          run: echo "this commit is fine"
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: fine message
+        run: echo "this commit is fine"
